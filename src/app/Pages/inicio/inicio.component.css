@@ -1,0 +1,40 @@
+
+
+tbody{
+  text-align: center;
+}
+
+thead{
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+th{
+  padding-right: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+td{
+  padding-right: 10px;
+}
+
+#BotonCSSNormal{
+  background-color: brown;
+  color: white;
+  width: 300px;
+  margin-top: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#Seccion-Botones{
+  align-items: center;
+  text-align: center;
+}
+
+div{
+justify-content: center;
+align-items: center;
+padding-left: 39%;
+}
+
+

@@ -1,0 +1,35 @@
+<body>
+  <div>
+    <h1>Tabla de personas</h1>
+    <THead>
+      <tr>
+        <th>Nombre</th>
+        <th>Edad</th>
+        <th>Ciuad</th>
+        <th>Documento</th>
+      </tr>
+    </THead>
+    <tBody>
+      @for (persona of personas; track $index) {
+      <tr>
+        <td>{{ persona.nombre }}</td>
+        <td>{{ persona.edad }}</td>
+        <td>{{ persona.ciudad }}</td>
+        <td>{{ persona.documento }}</td>
+      </tr>
+      }
+    </tBody>
+    <button id="BotonCSSNormal" routerLink="listas">Link2</button>
+    <br />
+    <button id="BotonCSSNormal" (click)="cambioRuta()">OpcionButton</button>
+    <br />
+    <button id="BotonCSSNormal" routerLink="nuevo">
+      Opcion para dirigir a nuevo
+    </button>
+    <br />
+    <button id="BotonCSSNormal" (click)="AbrirModal()">Este es el modal</button><br><br>
+    <button id="PruebaBootstrap" class="btn btn-warning" mat-button>
+      Hola <i class="fa-solid fa-gamepad"></i>
+    </button>
+  </div>
+</body>

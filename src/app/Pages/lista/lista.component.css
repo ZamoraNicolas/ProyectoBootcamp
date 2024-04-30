@@ -1,0 +1,25 @@
+
+#Titulo{
+  text-align: center;
+  margin-top: 20px;
+  color: rgba(148, 7, 7, 0.863);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container{
+text-align: center;
+}
+
+#nombre{
+  text-align: center;
+  background-color: rgba(160, 44, 36, 0.479);
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 20px;
+
+}
+
+body{
+  text-align: center;
+  align-items: center;
+}

@@ -1,0 +1,30 @@
+h1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+div{
+  text-align: center;
+}
+
+input{
+  width: 300px;
+  height: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+button{
+  height: 30px;
+  width: 70px;
+  background-color: black;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 20px;
+}

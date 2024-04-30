@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="./assets/imagenes/logo.jpeg" width="30" />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        @for (menu of menuItems; track $index) {
+        <li class="nav-item" [class]="menu.classCSS">
+          <i [class]="menu.icon"></i>
+          <a class="nav-link" [routerLink]="menu.path">{{ menu.tittle }}</a>
+        </li>
+        @if (menu.submenu?.length !== 0 ) {
+
+        {{
+          menu.submenu?.length
+        }}
+        <!-- Este es el subMenu -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+          </a>
+          <ul class="dropdown-menu">
+            @for (subMenu of menu.submenu; track $index) {
+            <li class="dropdown-item" [class]="subMenu.classCSS">
+              <i [class]="subMenu.icon"></i>
+              <a [routerLink]="subMenu.path">{{ subMenu.tittle }}</a>
+            </li>
+            }
+          </ul>
+        </li>
+        } }
+      </ul>
+    </div>
+  </div>
+</nav>
